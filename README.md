@@ -110,12 +110,7 @@ _The 'generatePoem' function in this program is a crucial procedure that generat
 _Here's how the algorithm works in detailed steps:_
 
 1. _Declare a variable called 'poems' and initialize it to an empty string._
-2. _For each poem to be generated, repeat the following steps:_
-
-- _Declare a variable called 'poem' and initialize it to a string value._
-- _Construct the 'poem' by concatenating three randomized phrases: "The [random noun] [random verb] [random adverb].", "And [random adverb] [random verb] [random noun],", and "[random verb] [random noun]." using the 'getRandomWord' helper function._
-- _Add the 'poem' string to the 'poems' variable, followed by two new lines._
-
+2. _For each poem to be generated, repeat the following steps: (a) Declare a variable called 'poem' and initialize it to a string value. (b) Construct the 'poem' by concatenating three randomized phrases: "The [random noun] [random verb] [random adverb].", "And [random adverb] [random verb] [random noun],", and "[random verb] [random noun]." using the 'getRandomWord' helper function. (c) Add the 'poem' string to the 'poems' variable, followed by two new lines._
 3. _Return the 'poems' variable, containing all the generated poems._
 
 _In summary, the 'generatePoem' function generates the poems by using randomized words from the three user-input lists and concatenating them into a specific structure to form a complete poem. The function is essential to the program as it generates the output that the user expects, which is a fun and creative poem based on their input._

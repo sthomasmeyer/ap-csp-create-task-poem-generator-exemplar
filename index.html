@@ -1,0 +1,734 @@
+<html>
+  <head>
+    <title>csp-poem-generator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="applab/fontawesome-webfont.woff2" as="font" />
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script>
+      function setExportConfig(config) {
+        window.EXPORT_OPTIONS = config;
+      }
+    </script>
+    <script src="https://studio.code.org/projects/applab/2nRnTyuFlazUszce5LlGS60WLCxO6djJYCOJTO7Hav0/export_config?script_call=setExportConfig"></script>
+    <script src="applab/applab-api.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <link rel="stylesheet" href="applab/applab.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      id="divApplab"
+      class="appModern running"
+      tabindex="1"
+      style="width: 320px; height: 450px; display: block"
+    >
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="homeScreen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+        "
+      >
+        <label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(23, 23, 23);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 21px;
+            padding: 2px 15px;
+            width: 320px;
+            position: absolute;
+            left: 0px;
+            top: 35px;
+            text-align: center;
+          "
+          id="appTitle"
+          >A Poem Generator App</label
+        ><input
+          id="noun0"
+          style="
+            margin: 0px;
+            width: 180px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(23, 23, 23);
+            background-color: rgb(242, 242, 242);
+            border-color: lightgreen;
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            top: 120px;
+            left: 25px;
+          "
+          placeholder=""
+        /><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 12px;
+            padding: 2px 15px;
+            position: absolute;
+            left: 5px;
+            top: 95px;
+            height: 20px;
+          "
+          id="nounOneLabel"
+          >Enter a noun related to the forest:</label
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 12px;
+            padding: 2px 15px;
+            position: absolute;
+            top: 175px;
+            height: 20px;
+            left: 5px;
+          "
+          id="nounTwoLabel"
+          >Enter a noun related to the ocean:</label
+        ><input
+          id="noun1"
+          style="
+            margin: 0px;
+            width: 180px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(23, 23, 23);
+            background-color: rgb(242, 242, 242);
+            border-color: lightskyblue;
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 25px;
+            top: 200px;
+          "
+          placeholder=""
+        /><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 12px;
+            padding: 2px 15px;
+            position: absolute;
+            top: 260px;
+            height: 20px;
+            left: 5px;
+          "
+          id="nounThreeLabel"
+          >Enter a noun related to the stars:</label
+        ><input
+          id="noun2"
+          style="
+            margin: 0px;
+            width: 180px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(23, 23, 23);
+            background-color: rgb(242, 242, 242);
+            border-color: lightgoldenrodyellow;
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 25px;
+            top: 285px;
+          "
+          placeholder=""
+        /><button
+          id="nounSubmitBtn"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 50px;
+            width: 110px;
+            background-color: rgb(23, 23, 23);
+            color: ghostwhite;
+            border-color: lightcoral;
+            border-radius: 5px;
+            border-width: 3px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            top: 355px;
+            left: 105px;
+          "
+        >
+          Submit
+        </button>
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="verbScreen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+          display: none;
+        "
+      >
+        <label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 12px;
+            padding: 2px 15px;
+            position: absolute;
+            left: 5px;
+            top: 95px;
+            height: 20px;
+          "
+          id="verbOneLabel"
+          data-mod-fontsize="1"
+          >Enter a verb that ends in s:</label
+        ><input
+          id="verb0"
+          style="
+            margin: 0px;
+            width: 180px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(23, 23, 23);
+            background-color: rgb(242, 242, 242);
+            border-color: lightgreen;
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            top: 120px;
+            left: 25px;
+          "
+          placeholder=""
+          data-mod-textcolor="1"
+          data-mod-bordercolor="1"
+        /><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 12px;
+            padding: 2px 15px;
+            position: absolute;
+            top: 175px;
+            height: 20px;
+            left: 5px;
+          "
+          id="verbTwoLabel"
+          data-mod-fontsize="1"
+          >Enter a verb that ends in s:</label
+        ><input
+          id="verb1"
+          style="
+            margin: 0px;
+            width: 180px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(23, 23, 23);
+            background-color: rgb(242, 242, 242);
+            border-color: lightskyblue;
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 25px;
+            top: 200px;
+          "
+          placeholder=""
+          data-mod-textcolor="1"
+          data-mod-bordercolor="1"
+        /><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 12px;
+            padding: 2px 15px;
+            position: absolute;
+            top: 260px;
+            height: 20px;
+            left: 5px;
+          "
+          id="verbThreeLabel"
+          data-mod-fontsize="1"
+          >Enter a verb that ends in s:</label
+        ><input
+          id="verb2"
+          style="
+            margin: 0px;
+            width: 180px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(23, 23, 23);
+            background-color: rgb(242, 242, 242);
+            border-color: lightgoldenrodyellow;
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 25px;
+            top: 285px;
+          "
+          placeholder=""
+          data-mod-textcolor="1"
+          data-mod-bordercolor="1"
+        /><button
+          id="verbSubmitBtn"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 50px;
+            width: 110px;
+            background-color: rgb(23, 23, 23);
+            color: ghostwhite;
+            border-color: lightcoral;
+            border-radius: 5px;
+            border-width: 3px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            top: 355px;
+            left: 105px;
+          "
+          data-mod-backgroundcolor="1"
+          data-mod-textcolor="1"
+          data-mod-bordercolor="1"
+          data-mod-borderradius="1"
+          data-mod-borderwidth="1"
+        >
+          Submit</button
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(23, 23, 23);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 21px;
+            padding: 2px 15px;
+            width: 320px;
+            position: absolute;
+            left: 0px;
+            top: 35px;
+            text-align: center;
+          "
+          id="verbScreenHeader"
+          data-mod-textcolor="1"
+          data-mod-fontsize="1"
+          >Gentle Verbs</label
+        >
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="adverbScreen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+          display: none;
+        "
+      >
+        <label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(23, 23, 23);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 21px;
+            padding: 2px 15px;
+            width: 320px;
+            position: absolute;
+            left: 0px;
+            top: 35px;
+            text-align: center;
+          "
+          id="adverbScreenHeader"
+          data-mod-textcolor="1"
+          data-mod-fontsize="1"
+          >Adverbs &amp; Articles</label
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 12px;
+            padding: 2px 15px;
+            position: absolute;
+            left: 5px;
+            top: 95px;
+            height: 20px;
+          "
+          id="adverbOneLabel"
+          data-mod-fontsize="1"
+          >Enter an adverb:</label
+        ><input
+          id="adverb0"
+          style="
+            margin: 0px;
+            width: 180px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(23, 23, 23);
+            background-color: rgb(242, 242, 242);
+            border-color: lightgreen;
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            top: 120px;
+            left: 25px;
+          "
+          placeholder=""
+          data-mod-textcolor="1"
+          data-mod-bordercolor="1"
+        /><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 12px;
+            padding: 2px 15px;
+            position: absolute;
+            top: 175px;
+            height: 20px;
+            left: 5px;
+          "
+          id="adverbTwoLabel"
+          data-mod-fontsize="1"
+          >Enter another adverb:</label
+        ><input
+          id="adverb1"
+          style="
+            margin: 0px;
+            width: 180px;
+            height: 30px;
+            border-style: solid;
+            color: rgb(23, 23, 23);
+            background-color: rgb(242, 242, 242);
+            border-color: lightskyblue;
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 25px;
+            top: 200px;
+          "
+          placeholder=""
+          data-mod-textcolor="1"
+          data-mod-bordercolor="1"
+        /><button
+          id="poemGeneratorBtn"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 55px;
+            width: 110px;
+            background-color: rgb(23, 23, 23);
+            color: ghostwhite;
+            border-color: lightcoral;
+            border-radius: 5px;
+            border-width: 3px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 105px;
+            top: 355px;
+          "
+          data-mod-backgroundcolor="1"
+          data-mod-textcolor="1"
+          data-mod-bordercolor="1"
+          data-mod-borderradius="1"
+          data-mod-borderwidth="1"
+        >
+          Generate Poem</button
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(77, 87, 95);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 12px;
+            padding: 2px 15px;
+            position: absolute;
+            top: 260px;
+            height: 20px;
+            left: 5px;
+          "
+          id="numPoemsLabel"
+          data-mod-fontsize="1"
+          >How many poems would you like?</label
+        ><select
+          id="numPoemsInput"
+          style="
+            height: 30px;
+            margin: 0px;
+            border-style: solid;
+            background-color: rgb(255, 255, 255);
+            color: rgb(23, 23, 23);
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23171717%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E');
+            border-color: lightgoldenrodyellow;
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 0px 30px 0px 15px;
+            position: absolute;
+            left: 25px;
+            top: 290px;
+            width: 70px;
+          "
+        >
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="finalPoemScreen"
+        style="
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+          display: none;
+        "
+      >
+        <label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(23, 23, 23);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 21px;
+            padding: 2px 15px;
+            width: 320px;
+            position: absolute;
+            left: 0px;
+            top: 35px;
+            text-align: center;
+          "
+          id="finalPoemHeader"
+          >Beautiful Poem(s)</label
+        ><button
+          id="tryAgainBtn"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            width: 110px;
+            background-color: rgb(23, 23, 23);
+            color: ghostwhite;
+            border-color: lightcoral;
+            border-radius: 4px;
+            border-width: 3px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 105px;
+            height: 50px;
+            top: 325px;
+          "
+        >
+          Try Again
+        </button>
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="poemDisplay"
+          style="
+            border-style: solid;
+            color: rgb(23, 23, 23);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 10px;
+            top: 70px;
+            margin: 0px;
+            width: 300px;
+            height: 225px;
+          "
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

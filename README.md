@@ -40,6 +40,8 @@ It must be:
 - no more than 1min in length
 - no more than 30mb file size
 
+https://user-images.githubusercontent.com/91103557/224180361-ffa58f7f-6bc4-49c1-a44c-ee776a888c92.mp4
+
 ### Exemplar Written Responses
 
 Submit your responses to prompts 3(a) – 3(d), which are described below. Your responses to all prompts combined must not exceed 750 words (program code is not included in the word count).

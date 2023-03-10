@@ -50,7 +50,7 @@ Submit your responses to prompts 3(a) – 3(d), which are described below. Your 
 
 1. Describes the overall **purpose** of the program
 
-   _The purpose of this program is to provide users with a fun and creative way to generate poetry._
+   _This program provides users with a fun, creative way to generate poetry. It's a powerful tool that leverages an algorithm to help users engage in acts of creative expression._
 
 2. Describes what **functionality** of the program is demonstrated in the video
 
